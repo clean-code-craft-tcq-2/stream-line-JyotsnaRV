@@ -17,14 +17,14 @@ Test case Description:
  //REQUIRE(dataBmsMain((runTimeIpNum_u32-1), maxStreamingRange) == OK_STATUS);
 //}
 
-TEST_CASE(" Test case to check if user request to halt the read after (100-1) as max count ") 
-{
+//TEST_CASE(" Test case to check if user request to halt the read after (100-1) as max count ") 
+//{
  /* Note: haltBmsRead.txt contains value as 0 in this case */
  /* This will stream only 100 datas */
- int runTimeIpNum_u32 = 50; /* Every 100th count of loop will enter into user request check to Halt the read or not */
- int maxStreamingRange = 50; /* this input will be taken as multiples of 5 */
- REQUIRE(dataBmsMain((runTimeIpNum_u32-1),maxStreamingRange) == OK_STATUS);
-}
+// int runTimeIpNum_u32 = 50; /* Every 100th count of loop will enter into user request check to Halt the read or not */
+// int maxStreamingRange = 50; /* this input will be taken as multiples of 5 */
+// REQUIRE(dataBmsMain((runTimeIpNum_u32-1),maxStreamingRange) == OK_STATUS);
+//}
 
 TEST_CASE(" Test case to check if user request to halt the read after (10-1) as max count ") 
 {
