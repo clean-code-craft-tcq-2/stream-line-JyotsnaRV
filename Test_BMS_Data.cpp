@@ -9,13 +9,13 @@ Test case Description:
 2. if the user has requested for a halt(when 1 is requested), the first nth count of 1st argument value is enough to break lopp and stop streaming.
 3. The second argument of dataBmsMain function is a value that consists of max count the data should stream, when user does not request halt(when 0 is requested).
 */
-TEST_CASE(" Test case to check if data is read and sender sends data ") 
-{
+//TEST_CASE(" Test case to check if data is read and sender sends data ") 
+//{
  /* This will stream datas in multiples of 100 */
- int runTimeIpNum_u32 = 50; /* Every 50th count of loop will enter into user request check to Halt the read or not */
- int maxStreamingRange = 20; /* this input will be taken as multiples of 5 */
- REQUIRE(dataBmsMain((runTimeIpNum_u32-1), maxStreamingRange) == OK_STATUS);
-}
+ //int runTimeIpNum_u32 = 50; /* Every 50th count of loop will enter into user request check to Halt the read or not */
+ //int maxStreamingRange = 20; /* this input will be taken as multiples of 5 */
+ //REQUIRE(dataBmsMain((runTimeIpNum_u32-1), maxStreamingRange) == OK_STATUS);
+//}
 
 TEST_CASE(" Test case to check if user request to halt the read after (100-1) as max count ") 
 {
